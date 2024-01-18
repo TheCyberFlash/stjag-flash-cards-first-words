@@ -21,3 +21,5 @@ const categories = [
         ],
     },
 ]
+
+export { categories };
