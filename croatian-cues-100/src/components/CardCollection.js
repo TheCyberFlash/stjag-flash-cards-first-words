@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { FlashCard } from "./FlashCard";
+import FlashCard from "./FlashCard";
 
 const CardCollection = () => {
     const selectedCategory = useSelector((state) => state.selectedCategory);
