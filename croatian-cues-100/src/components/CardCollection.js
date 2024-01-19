@@ -2,12 +2,14 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import FlashCard from "./FlashCard";
+import Buttons from './Buttons';
+
 
 const CardCollection = () => {
     const selectedCategory = useSelector((state) => state.selectedCategory);
 
     if (!selectedCategory) {
-        return <div>Please select a category</div>;
+        return <div>Please select a category <Buttons /></div>;
     }
 
     return (
