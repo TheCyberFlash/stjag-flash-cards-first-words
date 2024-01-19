@@ -7,11 +7,12 @@ const FlashCard = ({ word }) => {
         setIsFlipped(!isFlipped);
     };
 
-    // need to add the flip class to this card
     return (
-        <div onClick={handleClick}>
-            <div>{word.english}</div>
-            <div>{word.croatian}</div>
+        <div className={`flip-card ${isFlipped ? 'flipped' : ''}`} onClick={handleClick}>
+            <div className="flip-card-inner">
+                <img className="card-image" src={"https://via.placeholder.com/300"} alt={word.english} />
+                <div className="card-text">{isFlipped ? word.english : word.croatian}</div>
+            </div>
         </div>
     );
 }
