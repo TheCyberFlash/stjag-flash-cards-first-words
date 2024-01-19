@@ -7,10 +7,15 @@ const FlashCard = ({ word }) => {
         setIsFlipped(!isFlipped);
     };
 
+    const getImageSrc = (imageName) => {
+        return `images/${imageName}.png`;
+    };
+      
+
     return (
         <div className={`flip-card ${isFlipped ? 'flipped' : ''}`} onClick={handleClick}>
             <div className="flip-card-inner">
-                <img className="card-image" src={"https://via.placeholder.com/300"} alt={word.english} />
+                <img className="card-image" src={getImageSrc(word.english)} alt={word.english} />
                 <div className="card-text">{isFlipped ? word.english : word.croatian}</div>
             </div>
         </div>
