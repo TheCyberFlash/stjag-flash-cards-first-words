@@ -15,17 +15,17 @@ const Buttons = () => {
     };
 
     return (
-        <div>
+        <div className="grid-container">
             {categories.map((category) => (
                 <Link
                     key={category.id}
                     to={`/category/${category.id}`}
                     onClick={() => dispatch(selectCategory(category))}
                 >
-                    <button>{category.name}</button>
+                    <button className="grid-button">{category.name}</button>
                 </Link>
             ))}
-                        <button onClick={handleRandomClick}>Random</button>
+                        <button className="grid-button" onClick={handleRandomClick}>Random</button>
         </div>
     );
 };
