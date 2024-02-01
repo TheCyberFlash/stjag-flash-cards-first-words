@@ -8,7 +8,7 @@ const FlashCard = ({ word }) => {
   };
 
   const getImageSrc = (imageName) => {
-    return `${process.env.PUBLIC_URL}/images/${imageName}.png`;
+    return `/stjag-flash-cards-first-words/images/${imageName}.png`;
   };
 
   return (
