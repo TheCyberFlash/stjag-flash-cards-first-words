@@ -16,9 +16,12 @@ const CardCollection = () => {
         <div>
             <Link to="/">Back to Home</Link>
             <h2>{selectedCategory.name}</h2>
+            <div className="card-container">
             {selectedCategory.words.map((word) => (
                 <FlashCard key={word.id} word={word} />
             ))}
+
+            </div>
         </div>
     )
 }
