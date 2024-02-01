@@ -1,7 +1,13 @@
 /* // Cards */
 
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  grid-gap: 1rem;
+}
+
 .flip-card {
-  width: 300px;
+  /* width: 300px; */
   height: 400px;
   margin: 20px auto;
   border: 1px solid #ccc;
