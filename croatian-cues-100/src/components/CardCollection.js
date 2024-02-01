@@ -2,28 +2,30 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import FlashCard from "./FlashCard";
-import Buttons from './Buttons';
-
+import Buttons from "./Buttons";
 
 const CardCollection = () => {
-    const selectedCategory = useSelector((state) => state.selectedCategory);
+  const selectedCategory = useSelector((state) => state.selectedCategory);
 
-    if (!selectedCategory) {
-        return <div>Please select a category <Buttons /></div>;
-    }
-
+  if (!selectedCategory) {
     return (
-        <div>
-            <Link to="/">Back to Home</Link>
-            <h2>{selectedCategory.name}</h2>
-            <div className="card-container">
-            {selectedCategory.words.map((word) => (
-                <FlashCard key={word.id} word={word} />
-            ))}
+      <div>
+        Please select a category <Buttons />
+      </div>
+    );
+  }
 
-            </div>
-        </div>
-    )
-}
+  return (
+    <div>
+      <Link to="/">Back to Home</Link>
+      <h2>{selectedCategory.name}</h2>
+      <div className="card-container">
+        {selectedCategory.words.map((word) => (
+          <FlashCard key={word.id} word={word} />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export default CardCollection;
