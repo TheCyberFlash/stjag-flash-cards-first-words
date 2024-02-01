@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/stjag-flash-cards-first-words/static/css/main.9a0e8375.css",
-    "main.js": "/stjag-flash-cards-first-words/static/js/main.e36de49b.js",
+    "main.js": "/stjag-flash-cards-first-words/static/js/main.fe05bec8.js",
     "index.html": "/stjag-flash-cards-first-words/index.html",
     "main.9a0e8375.css.map": "/stjag-flash-cards-first-words/static/css/main.9a0e8375.css.map",
-    "main.e36de49b.js.map": "/stjag-flash-cards-first-words/static/js/main.e36de49b.js.map"
+    "main.fe05bec8.js.map": "/stjag-flash-cards-first-words/static/js/main.fe05bec8.js.map"
   },
   "entrypoints": [
     "static/css/main.9a0e8375.css",
-    "static/js/main.e36de49b.js"
+    "static/js/main.fe05bec8.js"
   ]
 }
