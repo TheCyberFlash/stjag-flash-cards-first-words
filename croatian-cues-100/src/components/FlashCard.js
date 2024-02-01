@@ -8,7 +8,7 @@ const FlashCard = ({ word }) => {
     };
 
     const getImageSrc = (imageName) => {
-        return `images/${imageName}.png`;
+        return `${process.env.PUBLIC_URL}/images/${imageName}.png`;
     };
       
 
