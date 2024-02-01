@@ -8,7 +8,7 @@ const FlashCard = ({ word }) => {
   };
 
   const getImageSrc = (imageName) => {
-    return `/stjag-flash-cards-first-words/images/${imageName}.png`;
+    return `./stjag-flash-cards-first-words/images/${imageName}.png`;
   };
 
   return (
